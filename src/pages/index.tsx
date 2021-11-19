@@ -14,7 +14,7 @@ export async function getServerSideProps(): Promise<
 > {
   return {
     props: {
-      title: "christofer.dev",
+      title: "christofer.dev server",
     },
   };
 }
