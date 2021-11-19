@@ -1,7 +1,22 @@
 import * as React from "react";
+import type { GetServerSidePropsResult } from "next";
 
-function HomePage(): React.ReactNode {
-  return <div>christofer.dev</div>;
+interface Props {
+  title: string;
+}
+
+function HomePage({ title }: Props): React.ReactNode {
+  return <div>{title}</div>;
+}
+
+export async function getServerSideProps(): Promise<
+  GetServerSidePropsResult<Props>
+> {
+  return {
+    props: {
+      title: "christofer.dev",
+    },
+  };
 }
 
 export default HomePage;
