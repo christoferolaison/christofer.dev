@@ -3,6 +3,7 @@ const branchName = "github-renovate";
 const config = {
   branchPrefix: `${branchName}/`,
   dependencyDashboardTitle: "Dependency Dashboard self-hosted",
+  dependencyDashboard: true,
   gitAuthor: "Renovate Bot <bot@renovateapp.com>",
   logLevel: "debug",
   onboarding: true,
