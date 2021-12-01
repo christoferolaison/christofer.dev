@@ -2,6 +2,7 @@ const branchName = "github-renovate";
 
 const config = {
   extends: ["config:base"],
+  rangeStrategy: "replace",
   branchPrefix: `${branchName}/`,
   dependencyDashboardTitle: "Dependency Dashboard self-hosted",
   gitAuthor: "Renovate Bot <bot@renovateapp.com>",
