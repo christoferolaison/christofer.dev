@@ -1,4 +1,4 @@
 {
-  "enabledManagers": ["npm"],
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "prConcurrentLimit": 1
 }
