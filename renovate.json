@@ -1,4 +1,3 @@
 {
-  "rangeStrategy": "bump",
-  "prConcurrentLimit": 1
+  "rangeStrategy": "bump"
 }
