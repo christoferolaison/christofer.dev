@@ -11,7 +11,7 @@ const config = {
   onboardingBranch: `${branchName}/configure`,
   platform: "github",
   repositories: ["christoferolaison/christofer.dev"],
-  prConcurrentLimit: 1,
+  prConcurrentLimit: 2,
   allowedPostUpgradeCommands: ["^git status$"],
   postUpgradeTasks: {
     commands: ["git status"],
