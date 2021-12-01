@@ -8,7 +8,7 @@ const config = {
   onboarding: true,
   onboardingBranch: `${branchName}/configure`,
   platform: "github",
-  repositories: [],
+  repositories: ["christofer.dev"],
 };
 
 module.exports = config;
