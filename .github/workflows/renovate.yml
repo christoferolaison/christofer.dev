@@ -17,4 +17,4 @@ jobs:
         uses: renovatebot/github-action@v29.27.0
         with:
           configurationFile: renovate-config.js
-          token: ${{ secrets.WHITESOURCE_RENOVATE_TOKEN }}
+          token: ${{ secrets.WHITESOURCE_RENOVATE_TOKEN_PRIVATE }}
