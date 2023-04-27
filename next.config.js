@@ -7,8 +7,8 @@ const nextConfig = {
         source: "/about",
         headers: [
           {
-            key: "cache-control",
-            value: "max-age=10",
+            key: "Cache-Control",
+            value: "public, max-age=10",
           },
           {
             key: "x-another-custom-header",
