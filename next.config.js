@@ -8,7 +8,7 @@ const nextConfig = {
         headers: [
           {
             key: "cache-control",
-            value: "public, max-age=600, stale-if-error=86400",
+            value: "max-age=10",
           },
           {
             key: "x-another-custom-header",
