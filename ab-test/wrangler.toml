@@ -1,0 +1,13 @@
+name = "ab-test"
+main = "src/index.ts"
+compatibility_date = "2023-04-26"
+usage_model = "bundled"
+env = { }
+
+[route]
+pattern = "christofer.dev/*"
+zone_name = "christofer.dev"
+
+[triggers]
+crons = [ ]
+
