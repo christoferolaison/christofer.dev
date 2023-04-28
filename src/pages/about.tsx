@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import { GetServerSideProps } from "next";
 
 export const config = {
   runtime: "experimental-edge",
@@ -7,13 +8,19 @@ export const config = {
 
 const inter = Inter({ subsets: ["latin"] });
 
-export async function getServerSideProps() {
-  return {
-    props: { msg: "About" },
-  };
+interface Props {
+  msg: string;
 }
 
-export default function Home({ msg }: { msg: string }) {
+export const getServerSideProps: GetServerSideProps<Props> = async (
+  context
+) => {
+  return {
+    props: { msg: context.req.headers.cookie ?? "NOPE" },
+  };
+};
+
+export default function Home({ msg }: Props) {
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
